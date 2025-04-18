@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Lookup Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Discord Tool</h1>
+  <div class="tabs">
+    <button onclick="showTab('user')">User Lookup</button>
+    <button onclick="showTab('server')">Server Lookup</button>
+  </div>
 
+  <div id="user-tab" class="tab active">
+    <input type="text" id="userInput" placeholder="Enter User ID" />
+    <button onclick="lookupUser()">Lookup</button>
+    <pre id="userResult"></pre>
+  </div>
+
+  <div id="server-tab" class="tab">
+    <input type="text" id="serverInput" placeholder="Enter Server ID" />
+    <button onclick="lookupServer()">Lookup</button>
+    <pre id="serverResult"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
