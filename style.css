@@ -1,1 +1,32 @@
-
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #2c2f33;
+  color: #fff;
+}
+.tabs button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.tab {
+  display: none;
+  margin-top: 1rem;
+}
+.tab.active {
+  display: block;
+}
+input {
+  padding: 0.5rem;
+  width: 250px;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+}
+pre {
+  background: #23272a;
+  padding: 1rem;
+  margin-top: 1rem;
+  white-space: pre-wrap;
+}
